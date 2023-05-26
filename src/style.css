@@ -1,0 +1,140 @@
+body{
+    background-color: black; 
+}
+.containerDiv{
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(195, 191, 191);
+    padding:10px 20px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;   
+}
+.card{
+    height: 100px;
+    text-align: left;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #e4dcdc;
+}
+
+button{
+    background-color:rgb(8, 113, 113);
+    padding: 10px;
+    color:#ffffff;
+    padding: 5px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+.inputholder{
+    display: flex;
+    justify-content:flex-start
+
+}
+.back, .loadmore{
+    display: block;
+    margin:10px auto;
+ }
+p{
+    font-style: italic;
+    font-size: 10px;
+    color: gray;
+    margin-bottom: 10px;
+}
+span{
+    font-size: 10px;
+    color: gray;
+}
+.position{
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0;
+    color: black;
+}
+.cardInformation{
+    position: relative;
+    top: -30px;  
+}
+
+input{
+    border: none;
+}
+
+header{
+    height: 30px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 280px 1fr 1fr ; 
+    background-color: #ffffff;
+    align-items: center;
+    margin: 20px;
+    border-radius: 5px;
+}
+.header1{
+    display: none;
+}
+
+.search{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;   
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    height: 30px;
+    max-width: 50px;
+    position: relative;
+    top: -30px;
+}
+.location{
+    color: #26bf59;
+    margin-top: 20px;
+}
+.fulltimeholder{
+    display: flex;
+    align-items: center;
+ }
+.fulltime{
+    font-size: 11px; 
+    font-weight: bold;
+    margin-top: -5px;
+
+  }
+  @media screen and (max-width: 480px) {
+    .containerDiv{
+        width: 200px;
+        padding: 5px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr ; 
+        align-items: space-around; 
+        margin-bottom: 20px;
+    }
+    header {
+    display: none;
+    }
+    .header1{
+    padding: 10px;
+    display: grid;
+    grid-template-columns:120px 1fr 1fr ; 
+    background-color: #ffffff;
+    align-items: center;
+    margin:15px 2px;
+    border-radius: 5px;
+    }
+    .card{
+    margin:15px 2px;
+    padding:15px 2px;
+    }
+    }
+ 
